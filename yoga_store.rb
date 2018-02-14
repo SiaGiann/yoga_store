@@ -9,19 +9,12 @@ shopping_cart = []
 
 puts "These are our products:\n"
 
-#This one doesnt work!!!!!!
-  # @products.each do |product|
-  #   puts "Product No#{product[:num]}-#{product[:name]}-#{product[:price] euro}"
-  #   puts "**" * 20
-  # end
-
   @products.each do |product|
-    puts "Reference nr.: #{product[:number]}"
-    puts "Product: #{product[:name]}"
-    puts "Price: #{product[:price]} EUR"
-    puts "*" *30
+    puts "Product No#{product[:number]}-#{product[:name]}-#{product[:price]} euro"
+    puts "**" * 20
   end
 
+  
 def select_product
   puts "Please select number!"
   select = gets.to_i
